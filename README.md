@@ -35,11 +35,11 @@ ejercicios indicados.
 
   Aquest pipeline converteix un fitxer d'àudio en format wav a un conjunt de coeficients LPC que representen les característiques acústiques del senyal. El significat principal és el següent:
 
-  **sox**: Converteix l'àudio a format raw.
-  **$X2X**: Converteix el format de les dades a números flotants.
-  **$FRAME**: Divideix el senyal en marcs consecutius de 30 ms amb un solapament de 10 ms.
-  **$WINDOW**: Aplica una finestra de ponderació a cada marc.
-  **$LPC**: Calcula els coeficients LPC de cada marc per representar la informació del senyal de forma compacta.
+  **sox**: Converteix l'àudio a format raw.  
+  **$X2X**: Converteix el format de les dades a números flotants.  
+  **$FRAME**: Divideix el senyal en marcs consecutius de 30 ms amb un solapament de 10 ms.  
+  **$WINDOW**: Aplica una finestra de ponderació a cada marc.  
+  **$LPC**: Calcula els coeficients LPC de cada marc per representar la informació del senyal de forma compacta.  
 
   A continuació es presenta la definició dels paràmetres que l’usuari haurà d’introduir en executar el script: nombre de coeficients de predicció lineal, fitxer d’entrada i fitxer de sortida. Un cop introduïts, es desaran a les variables corresponents.
 
@@ -142,9 +142,9 @@ Complete el código necesario para realizar reconociminto del locutor y optimice
 - Inserte una tabla con la tasa de error obtenida en el reconocimiento de los locutores de la base de datos
   SPEECON usando su mejor sistema de reconocimiento para los parámetros LP, LPCC y MFCC.
 
-**LP**:   nerr=100	ntot=785	error_rate=12.74%
-**LPCC**: nerr=6	ntot=785	error_rate=0.76%
-**MFCC**: nerr=13	ntot=785	error_rate=1.66%
+**LP**:   nerr=100	ntot=785	error_rate=12.74%  
+**LPCC**: nerr=6	ntot=785	error_rate=0.76%  
+**MFCC**: nerr=13	ntot=785	error_rate=1.66%  
 
 ### Verificación del locutor.
 
@@ -155,9 +155,11 @@ Complete el código necesario para realizar verificación del locutor y optimice
   pérdidas, y el score obtenido usando la parametrización que mejor resultado le hubiera dado en la tarea
   de reconocimiento.
 
-  ![LPCC](img/6.png)
-  ![LP](img/7.png)
-  ![MFCC](img/8.png)
+  **LPCC**: ![LPCC](img/6.png)  
+
+  **LP**:![LP](img/7.png)  
+
+  **MFCC**:![MFCC](img/8.png)  
  
 ### Test final
 
