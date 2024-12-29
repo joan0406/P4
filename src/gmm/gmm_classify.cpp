@@ -25,12 +25,17 @@ int classify(const vector<GMM> &vgmm, const fmatrix &dat, float &maxlprob)
 	int maxind  = -1;
 	maxlprob = -1e38;
 
-	//TODO Assign maxind to the best index of vgmm calling 'logprob' for each gmm. Implement this function in gmm.cpp
-	maxind = 0;
-
+	/// \TODO Assign maxind to the best index of vgmm calling 'logprob' for each gmm. Implement this function in gmm.cpp
+	/// \FET Maxinf calculat
+	for(unsigned int ind = 0; ind< vgmm.size() ; ind++){
+		
+		if((lprob=vgmm[ind].logprob(dat)) > maxlprob){
+			maxlprob = lprob;
+			maxind = ind;
+		}
+	}
 	return maxind;
 }
-
 
 int main(int argc, const char *argv[])
 {
